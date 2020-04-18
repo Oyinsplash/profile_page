@@ -12,14 +12,14 @@ body {
   color: #5f5f5f;
 }
 .nav_bar{
-    margin: 2rem 8rem;  
+    margin: 2rem 8rem; 
 }
 .nav_bar ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   font-family: "Raleway", sans-serif;
-  margin: 2rem 8rem;
+  margin: 2rem 0;
 }
 .nav_bar a {
   margin: 1rem;
@@ -28,12 +28,17 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
+  transition: 0.3s;
 }
 .nav_bar a:hover{
-    border: 1px solid #fe828c;
+    /* border: 1px solid #fe828c; */
+    color:#fe828c;
+ 
 }
+
 .home {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 50px 20px;
   background-color: #fff;
@@ -120,7 +125,7 @@ body {
   margin-left: 4rem;
 }
 .contact_details hr{
-    width: 15%;
+    width: 20%;
     height: 0.1rem;
     background-color: #9d103f;
     margin: .5rem 0;
@@ -141,6 +146,7 @@ body {
 .contact_details .fab, .contact_details .fas{
     color: #9d103f;
     font-size: 1.5rem;
+    margin-right: 1rem;
 }
 .about {
   display: flex;
@@ -155,13 +161,25 @@ body {
 .about .title, .about .content{
     margin: 2rem auto 2rem 1rem;
 }
-.cv_btn {
+.about .cv_btn {
   text-decoration: none;
-  border: 1px solid #26a2c0;
+  border: 1px solid #9d103f;
   padding: 1rem 2rem;
   border-radius: 5px;
   margin-top: 5rem;
+  color: #9d103f;
+  animation: bounce 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; 
+
 }
+.about .cv_btn:hover {
+    background-color: #9d103f;
+    color: #fe828c;
+}
+@keyframes bounce {
+    to { transform: scale(1.2); }
+  }
 
 .contact {
   background-color: #222629;
@@ -218,6 +236,7 @@ body {
   margin: 0 2rem 2rem 0;
   border-radius: 0.5rem;
   padding: 1rem;
+  width: 200px;
   border: 1px solid #fe828c;
 }
 .company_subject input,
@@ -245,4 +264,5 @@ body {
   background-color: #222629;
   border: 1px solid #222629;
   color: #fe828c;
+  font-size: 1.5rem;
 }
