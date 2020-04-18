@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #222629;
+  /* #57CDC3 */
+  color: #5f5f5f;
+}
+.nav_bar{
+    margin: 2rem 8rem;  
+}
+.nav_bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  margin: 2rem 8rem;
+}
+.nav_bar a {
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 14px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav_bar a:hover{
+    border: 1px solid #fe828c;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  margin: 4rem 10rem 0 10rem;
+}
+
+.photo {
+  width: 26%;
+  height: fit-content;
+}
+.image {
+  display: flex;
+}
+.image img {
+  width: 288px;
+  height: 300px;
+}
+.social_icons {
+  display: flex;
+  justify-content: center;
+}
+.social_icons .fab {
+  color: #9d103f;
+  font-size: 3rem;
+  margin: 2rem 1rem;
+}
+
+.info {
+  width: 66%;
+  font-size: 1.4rem;
+  margin:  0;
+
+}
+.info-container {
+  display: flex;
+}
+.intro hr{
+    width: 60%;
+    color: #5f5f5f;
+}
+.intro {
+  margin: 1rem auto 3rem 3rem;
+}
+.intro h1 {
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+}
+.intro span {
+  color: #9d103f;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+.intro p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.basic_info {
+  width: 60%;
+  margin-left: 3rem;
+}
+.basic_info hr{
+    width: 10%;
+    height: 0.1em;
+    background-color: #9d103f;
+    margin: .5rem 0;
+    border: 1px solid #9d103f;
+}
+.basic_info .details {
+  display: flex;
+  justify-content: space-between;
+}
+.basic_info .title p {
+    margin-top: 1rem;
+    color: #222629;
+    font-weight: 700;
+}
+.basic_info .answer p{
+    margin: 1rem 1rem 0 0;
+    font-weight: 700;
+}
+.contact_details {
+  width: 30%;
+  margin-left: 4rem;
+}
+.contact_details hr{
+    width: 15%;
+    height: 0.1rem;
+    background-color: #9d103f;
+    margin: .5rem 0;
+    border: 1px solid #9d103f;
+}
+.contact_details .info{
+    display: flex;
+    justify-content: space-between;
+}
+.info .details{
+    margin-left: 1rem;
+}
+.contact_details p, .contact_details .fab, .contact_details .fas{
+    margin-top: 1rem;
+    color: #222629;
+    font-weight: 700;
+}
+.contact_details .fab, .contact_details .fas{
+    color: #9d103f;
+    font-size: 1.5rem;
+}
+.about {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background: #fff;
+  margin: 6rem 10rem 0 10rem;
+  font-size: 1.5rem;
+  padding: 4rem;
+  text-align: center;
+}
+.about .title, .about .content{
+    margin: 2rem auto 2rem 1rem;
+}
+.cv_btn {
+  text-decoration: none;
+  border: 1px solid #26a2c0;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-top: 5rem;
+}
+
+.contact {
+  background-color: #222629;
+  padding: 6rem 10rem;
+  font-size: 1.5rem;
+}
+.contact_container {
+  display: flex;
+  background: #fff;
+}
+.contact_photo {
+  width: 45%;
+  background: url("./assets/images/thomas-dumortier-0cvH_Bl2TOo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form_container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 55%;
+  padding: 5rem 3rem;
+  background-color: #fe828c;
+  color: #222629;
+  align-items: center;
+}
+.form_container .container {
+  display: flex;
+  flex-direction: column;
+}
+.form_container h2 {
+  margin: 2rem auto 1rem 1rem;
+}
+.form_container p {
+  margin: 1rem auto 1rem 1rem;
+}
+.form_container .form {
+  margin: 1rem auto 2rem 1rem;
+}
+.form .details {
+  display: flex;
+}
+.form .name_email {
+  display: flex;
+  flex-direction: column;
+}
+.name_email label,
+.company_subject label {
+  margin-bottom: 0.5rem;
+}
+.name_email input,
+.company_subject input {
+  margin: 0 2rem 2rem 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #fe828c;
+}
+.company_subject input,
+.company_subject label {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+.form textarea {
+  border: 1px solid #fe828c;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.form .company_subject {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn .submit_btn {
+  margin-top: 1rem;
+  padding: 1rem 8rem;
+  background-color: #222629;
+  border: 1px solid #222629;
+  color: #fe828c;
+}
